@@ -1,5 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+/* ========= Custom Fixes for Better Mobile Responsiveness ========= */
+
+/* Portfolio Image Fix */
+.portfolio__img {
+  width: 100%; /* Allow image to scale */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stack columns for small screens */
+@media screen and (max-width: 600px) {
+  .home__content {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .home__blob-img {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+  }
+
+  .about__description {
+    font-size: var(--normal-font-size);
+    padding: 0 1rem;
+    text-align: justify;
+  }
+
+  .skills__names {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .qualification__data {
+    grid-template-columns: 1fr !important;
+    text-align: left;
+  }
+
+  .portfolio__content {
+    grid-template-columns: 1fr !important;
+    padding: 0.5rem;
+  }
+
+  .portfolio__data {
+    padding-top: 1rem;
+  }
+
+  .contact__container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .home__title {
+    font-size: 1.8rem;
+  }
+
+  .home__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section {
+    padding: 1.5rem 0;
+  }
+
+  .nav__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+
 /*================ VARIABLES CSS ==========*/
 
 :root {
