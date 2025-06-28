@@ -72,10 +72,11 @@
 }
 
 
+
 /*================ VARIABLES CSS ==========*/
 
 :root {
-  --header-height: 3rem;
+  --header-height: 1.5rem;
 
   /*======= Colors =======*/
   /* Change Favorite color */
@@ -181,11 +182,9 @@ body.dark-theme {
 html {
   scroll-behavior: smooth;
 }
-body {
-  height: 100vh;
-  margin: 0;
+body {  
   background: linear-gradient(-45deg, #c850c0, #ffb6c1, #ff5edf, #c850c0);
-  background-size: 400% 400%;
+  background-size: 1000% 1000%;
   animation: pinkPurpleAnimation 10s ease infinite;
   color: white;
   font-family: sans-serif;
@@ -1219,3 +1218,4 @@ img {
     bottom: -4.5rem;
   }
 }
+
